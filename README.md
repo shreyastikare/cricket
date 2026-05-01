@@ -58,6 +58,14 @@ The first-innings model is inherently more uncertain because the batting team is
 
 The first-innings score predictor estimates a team’s final score from any point in the innings based primarily on available batting resources: balls remaining and wickets remaining.
 
+At the core of the model is a parametric resource function adapted from the original Duckworth-Lewis method, which models the remaining scoring potential as a function of wickets and balls:
+
+$$
+R(w,b) = R_0(w)\left(1 - e^{-\beta(w)b}\right)
+$$
+
+Here, $R(w,b)$ represents the expected runs remaining given $w$ wickets in hand and $b$ balls remaining, while $R_0(w)$ captures the asymptotic scoring potential and $\beta(w)$ controls how quickly that potential is realized. Rather than relying on the original parameters, the function was re-estimated using IPL T20 data to reflect modern scoring dynamics, where run rates and batting aggression differ substantially from the longer formats the original model was designed for.
+
 Validation performance on IPL matches from **2022–2025**:
 
 | Metric | Value |
@@ -71,7 +79,6 @@ The model is typically within approximately **18 runs** of the final first-innin
 
 The model was designed to preserve cricket logic. More flexible machine learning models can sometimes improve aggregate error metrics while producing projections that do not behave consistently with resources remaining. In contrast, the resource-based structure ensures that projected scoring potential remains aligned with the relationship between wickets, balls remaining, and expected final score.
 
-<!-- Replace the path below with your actual file path -->
 ![Resource Curve by Wickets Remaining](output/resource-curve.png)
 
 *Resource curve by wickets remaining. This visual shows how scoring potential changes as batting resources decline, helping ensure that the projection framework remains consistent with cricket intuition.*
