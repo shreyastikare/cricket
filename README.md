@@ -2,6 +2,8 @@
 
 This project builds a ball-by-ball analytics framework for the Indian Premier League (IPL), delivering real-time win probability estimation, score projection, and context-aware player impact analysis through an interactive dashboard for live and historical match analytics.
 
+🔗 **Live Dashboard:** https://cricket.shreyastikare.com
+
 ## What is Cricket? (Quick Overview)
 
 Cricket is a bat-and-ball sport where two teams compete to score more runs than their opponent. In the Twenty20 (T20) format used in the IPL, each team bats once for up to 20 overs (120 balls), attempting to maximize runs while the opposing team bowls and fields to limit scoring and take wickets (outs).
