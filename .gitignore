@@ -1,0 +1,99 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local environment files
+.env
+.env.*
+*.env
+!.env.example
+
+# Local data and database artifacts
+data/raw/
+data/raw_api/
+data/interim/
+data/external/
+data/processed/
+data/raw_api/
+data/espn/
+data/logs/
+data/sqlite/*
+*.db
+!data/sqlite/ipl.db
+!ipl.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Private live-ingestion/API integrations
+src/ipl/api/
+src/ipl/storage/ball_by_ball_loader.py
+src/ipl/storage/cli.py
+src/ipl/storage/historical_loader.py
+src/ipl/storage/playbyplay_loader.py
+src/ipl/storage/player_identity.py
+src/ipl/storage/schedule_loader.py
+src/ipl/simulation/
+scripts/*live*.sh
+scripts/*ingest*.sh
+scripts/*api*.sh
+scripts/refresh_schedule.sh
+logs/*live*.log
+tests/test_espn*.py
+tests/test_playbyplay_loader.py
+
+# Large/manual data files are provisioned outside git for deployment
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+
+# Historical/training model snapshots; keep production joblib artifacts trackable
+src/ipl/models/*_old.joblib
+src/ipl/models/*_NEW.joblib
+src/ipl/models/*_train.joblib
+
+# Analysis, notes, and generated outputs
+notebooks/
+notes/
+scratch/
+experiments/
+.ipynb_checkpoints/
+*.ipynb
+*.pdf
+reports/generated/
+snapshots/
+logs/
+*.log
+
+# Local planning/checklist files
+todo.txt
+final-IPL-IPR-checklist.txt

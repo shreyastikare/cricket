@@ -1,0 +1,195 @@
+a.score-team-link,
+a.score-team-link:link,
+a.score-team-link:visited,
+a.score-team-link:active,
+a.score-team-link:focus {
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+a.score-team-link:hover {
+    text-decoration: underline !important;
+    text-decoration-line: underline !important;
+}
+
+a.team-ranking-link,
+a.team-ranking-link:link,
+a.team-ranking-link:visited,
+a.team-ranking-link:active,
+a.team-ranking-link:focus {
+    color: inherit !important;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+a.team-ranking-link:hover {
+    color: inherit !important;
+    text-decoration: underline !important;
+    text-decoration-line: underline !important;
+    text-underline-offset: 3px;
+}
+
+.team-logo {
+    display: inline-block;
+    height: auto;
+    max-width: 24px;
+    max-height: 24px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
+.team-logo-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+}
+
+.score-team-logo-inline .team-logo,
+.scorecard-team-logo-inline .team-logo {
+    max-width: 28px;
+    max-height: 28px;
+}
+
+.win-prob-team-logo-inline {
+    gap: 12px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.win-prob-team-logo-inline .team-logo {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.phase-summary-team-logo-inline .team-logo,
+.leaderboard-team-logo-inline .team-logo {
+    max-width: 22px;
+    max-height: 22px;
+}
+
+.overall-strength-logo-inline .team-logo {
+    max-width: 34px;
+    max-height: 34px;
+}
+
+.leader-card-team-logo-inline {
+    align-items: center;
+    gap: 10px;
+}
+
+.leader-card-team-logo-inline .team-logo {
+    max-width: 44px;
+    max-height: 44px;
+}
+
+.recent-match-team-logo-inline .team-logo {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.playbyplay-over-logo {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.playbyplay-over-title-logo-inline {
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scorecard-title-logo-inline {
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.scorecard-title-logo {
+    max-width: 28px;
+    max-height: 28px;
+}
+
+.team-analysis-header-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-width: 0;
+}
+
+.team-analysis-header-logo {
+    max-width: 132px;
+    max-height: 132px;
+}
+
+.site-footer {
+    flex: 0 0 auto;
+    background: #f8f9fa;
+    color: #5f6b76;
+    font-size: 12px;
+}
+
+.site-footer-inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(33, 37, 41, 0.12);
+    padding: 16px 24px;
+}
+
+.site-footer-credit {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.site-footer-disclaimer {
+    max-width: 980px;
+    margin: 0;
+    line-height: 1.45;
+}
+
+.site-footer-links {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.site-footer-credit a,
+.site-footer-credit a:link,
+.site-footer-credit a:visited,
+.site-footer-links a,
+.site-footer-links a:link,
+.site-footer-links a:visited {
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.site-footer-links a:hover,
+.site-footer-links a:focus {
+    color: #1a73b8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+    .site-footer-inner {
+        padding: 14px 18px;
+    }
+
+    .site-footer-links {
+        flex-wrap: wrap;
+        white-space: normal;
+    }
+}
